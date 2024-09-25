@@ -11,9 +11,12 @@
   <body>
     <!-- Start Coding Here -->
 <!-- we start here-->
+
+
+
   <body class="bg-[#F6F6FB]">
     <div
-      class="w-[1392px] mx-auto flex justify-between py-8 px-12 h-[80px] rounded-[99px] items-center m-[24px] fixed top-0 left-0 right-0 bg-white"
+      class="max-w-[375px]  mx-auto lg:max-w-[1392px]  flex justify-between py-8 px-12 h-[80px] rounded-[99px] lg:items-center m-[24px] lg:fixed lg:top-0 lg:left-0 right-0 bg-white"
     >
       <a href="">
         <svg
@@ -49,29 +52,51 @@
         </svg>
       </a>
       <div class="">
-        <ul class="flex gap-10">
-          <li class="border-b border-1 border-blue-400 text-blue-400">
+        <ul class="lg:flex lg:gap-10 hidden">
+          <li class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">
             <a href="">Home</a>
           </li>
-          <li><a href="">Feature</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Content</a></li>
+          <li><a href="" class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">Feature</a></li>
+          <li><a href="" class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">Pricing</a></li>
+          <li><a href="" class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">Content</a></li>
+        </ul>
+
+        <button class="flex flex-col gap-1 cursor-pointer group  lg:hidden " popovertarget="my-popover">
+          <div class="w-[24px] h-1 bg-[#9393AC] group-hover:bg-[#5E44FF]" ></div>
+          <div class="w-[24px] h-1 bg-[#9393AC] group-hover:bg-[#5E44FF]"></div>
+          <div class="w-[24px] h-1 bg-[#9393AC] group-hover:bg-[#5E44FF]"></div>
+        </button>
+        
+      </div>
+
+
+      <div class="w-[400px] text-center h-[400px] " popover id="my-popover">
+        <ul class="lg:flex lg:gap-10 ">
+          <li class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">
+            <a href="">Home</a>
+          </li>
+          <li><a href="" class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">Feature</a></li>
+          <li><a href="" class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">Pricing</a></li>
+          <li><a href="" class="hover:border-b hover:border-1 hover:border-blue-400 hover:text-blue-400">Content</a></li>
         </ul>
       </div>
+
+
+
     </div>
 
-    <div class="w-[1200px] mx-auto mt-[200px] pb-[140px] px-[120px]">
-      <div class="flex flex-col gap-10 items-center">
+    <div class="lg:w-[1200px] mx-auto mt-[80px] lg:mt-[200px] pb-[140px] px-[120px]">
+      <div class="flex flex-col gap-10 items-center  text-center">
         <div
-          class="bg-[#563AFF1A] flex items-center rounded-[99px] w-[236px] h-[40px] justify-center"
+          class="bg-[#563AFF1A] w-[236px] flex items-center rounded-[99px] lg:w-[236px] h-[40px] justify-center"
         >
           🌈️
           <h4 class="text-[#5E44FF]">Acme Productivity App</h4>
         </div>
-        <h1 class="text-[80px] font-[800]">
+        <h1 class="lg:text-[80px] text-[44px]  font-[800]">
           Boost Your <span class="text-[#5E44FF]">Product</span>ivity
         </h1>
-        <h4 class="text-[24px] font-[600]">
+        <h4 class=" text-[24px] font-[600]">
           Streamline your workflow with our all-in-one productivity app.
         </h4>
         <button
@@ -137,6 +162,69 @@
   </div>
 </section>
     <!-- toei end here -->
+    
+    <!-- Mocca from here to end -->
+    <div class = "flex w-full flex-col items-center pt[20px] pb-20">
+      
+      <div class = "flex  flex-col items-center  bg-white px-[120px] py-[80px] rounded-[24px] max-sm:w-[375px] md:w-[834px] h-[530px] lg:w-[1200px] h-[666px]">
+      
+        <div>
 
-  </body>
+          <h2 class="text-center text-#1A1A2C inter text-[44px] font-bold "> Get in Touch </h2>
+  
+          <div>
+            <div class="flex justify-center pt-[4px] pb-[4px]">
+              <div>
+                <label class="inter text-[16px] leading-[24px]" for="name">Name</label><br>
+                <!-- border size จงใจทำเป็น 3px นะครับ 1 มันมองเเทบไม่เห็นเลยอ่ะ -->
+                <input
+                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px] max-sm:w-[303px] md:w-[546px]"
+                  type="text" id="name" name="name" placeholder="  John    Doe"><br>
+              </div>
+            </div>
+  
+            <div class="flex justify-center pt-[4px] pb-[4px]">
+              <div>
+                <label class="inter text-[16px] leading-[24px]" for="email">Email</label><br>
+                <input
+                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px] max-sm:w-[303px] md:w-[546px] "
+                  type="text" id="email" name="email" placeholder="  john@example.com"><br>
+              </div>
+            </div>
+  
+            <div class="flex justify-center pt-[4px] pb-[4px]">
+              <div>   
+                <label class="inter text-[16px] leading-[24px]" for="message">Message</label><br>
+                <input
+                  class="inter text-[16px] leading-[24px] h-[102px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px] max-sm:w-[303px] md:w-[546px]"
+                  type="text" id="message" name="message" placeholder="  Your message..."><br>
+              </div>
+            </div>
+            <div class="flex justify-center mt-4">
+              <button class=" inter bg-[#1A1A2C] text-white text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[16px] max-sm:w-[303px] md:w-[546px]"
+                type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="w-full md:w-[834px] lg:w-[1200px]">
+        <div class="flex md:w-full px-[10] py-[120px] md:flex-row md:justify-between sm:px-[0] py-[40px] flex-col items-center lg:flex-row">
+  
+          <div>
+            <label class="inter text-[16px] leading-[24px]  h-[48px] flex sm:pl-[0px] md:pl-[30px] lg:pl-[30px]">Acme productivity app ©2024</label>
+          </div>
+  
+          <div class="flex flex-row justify-between items-center h-[12px] w-[313px] px-[10] py-[20px]">
+            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">FAQ</a>
+            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">Terms</a>
+            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">AI Policy</a>
+            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">Pricing</a>
+          </div>
+  
+        </div>
+      </footer>
+    </div>
+    
+ </body>
 </html>
