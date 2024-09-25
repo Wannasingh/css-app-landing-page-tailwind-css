@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <!-- <body> -->
-<!-- Start Coding Here -->
+  <body>
+    <!-- Start Coding Here -->
 <!-- we start here-->
   <body class="bg-[#F6F6FB]">
     <div
@@ -85,128 +85,58 @@
     
     <!-- toei start here -->
     <section
-      class="flex justify-center items-center h-[100vh] w-[100vw] bg-[#F6F6FB]"
+  class="flex flex-col md:flex-row flex-wrap justify-center gap-5 max-w-[1200px] mx-auto"
+>
+  <div
+    class="bg-[#d7e5f6] w-full md:w-[30%] p-7 rounded-3xl flex flex-col flex-1 gap-10 transform hover:scale-105 transition-transform"
+  >
+    <div
+      class="w-[60px] h-[60px] bg-white bg-opacity-60 rounded-2xl flex justify-center items-center"
     >
-      <content class="flex justify-evenly gap-5 ">
-        <div
-          class="flex flex-col justify-between items-start w-[387px] h-[272px] gap-2 rounded-md bg-[#D7E5F6] transform hover:scale-105 transition-transform"
-        >
-          <div
-            class="flex justify-center items-center p-2 rounded-sm w-[60px] h-[60px] bg-[ffffff99]"
-          >
-            <img src="/src/Frame 427321229.png" alt="icon1" />
-          </div>
-          <div class="p-2">
-            <h3 class="text-[#1A1A2C] text-xl font-bold leading-8">
-              Steamlined Workflows
-            </h3>
-            <p class="text-[#5f5f76] text-base font-light leading-8">
-              Automate repetitive tasks and focus on high-impact work with our
-              powerful productivity features.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-between items-start w-[387px] h-[272px] gap-4 rounded-md bg-[#D8E0FC] transform hover:scale-105 transition-transform"
-        >
-          <div
-            class="flex justify-center items-center p-2 rounded-sm w-[60px] h-[60px] bg-[ffffff99] "
-          >
-            <img src="/src/Frame 427321230.png" alt="icon1" />
-          </div>
-          <div class="p-2">
-            <h3 class="text-[#1A1A2C] text-xl font-bold leading-8">
-              Blazing Fast Performance
-            </h3>
-            <p class="text-[#5f5f76] text-base font-light leading-8">
-              Experience lightning-fast performance and instant responsiveness
-              with our cutting-edge technology.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-between items-start w-[387px] h-[272px] gap-4 rounded-md bg-[#E8DCF6] transform hover:scale-105 transition-transform"
-        >
-          <div
-            class="flex justify-center items-center p-2 rounded-sm w-[60px] h-[60px] bg-[ffffff99]"
-          >
-            <img src="/src/Frame 427321231.png" alt="icon1" />
-          </div>
-          <div class="p-2">
-            <h3 class="text-[#1A1A2C] text-xl font-bold leading-8">
-              Intuitive Interface
-            </h3>
-            <p class="text-[#5f5f76] text-base font-light leading-8">
-              Our user-friendly interface makes it easy for anyone to streamline
-              their workflow.
-            </p>
-          </div>
-        </div>
-      </content>
-    </section>
+      <img src="/src/Frame 427321229.png" alt="Icon 1" class="max-w-full" />
+    </div>
+    <div class="flex flex-col gap-3">
+      <h3 class="text-[24px] font-semibold">Streamlined Workflows</h3>
+      <p class="text-[#5f5f76]">
+        Automate repetitive tasks and focus on high-impact work with our powerful
+        productivity features.
+      </p>
+    </div>
+  </div>
+  <div
+    class="bg-[#D8E0FC] w-full md:w-[30%] p-7 rounded-3xl flex flex-col flex-1 gap-10 transform hover:scale-105 transition-transform"
+  >
+    <div
+      class="w-[60px] h-[60px] bg-white bg-opacity-60 rounded-2xl flex justify-center items-center"
+    >
+      <img src="/src/Frame 427321230.png" alt="Icon 2" class="max-w-full" />
+    </div>
+    <div class="flex flex-col gap-3">
+      <h3 class="text-[24px] font-semibold">Blazing Fast Performance</h3>
+      <p class="text-[#5f5f76]">
+        Experience lightning-fast performance and instant responsiveness with our
+        cutting-edge technology.
+      </p>
+    </div>
+  </div>
+  <div
+    class="bg-[#E8DCF6] w-full md:w-[30%] p-7 rounded-3xl flex flex-col flex-1 gap-10 transform hover:scale-105 transition-transform"
+  >
+    <div
+      class="w-[60px] h-[60px] bg-white bg-opacity-60 rounded-2xl flex justify-center items-center"
+    >
+      <img src="/src/Frame 427321231.png" alt="Icon 3" class="max-w-full" />
+    </div>
+    <div class="flex flex-col gap-3">
+      <h3 class="text-[24px] font-semibold">Intuitive Interface</h3>
+      <p class="text-[#5f5f76]">
+        Our user-friendly interface makes it easy for anyone to streamline their
+        workflow.
+      </p>
+    </div>
+  </div>
+</section>
     <!-- toei end here -->
-
-    <div class = "flex flex-col items-center pt[20px] pb-20">
-      
-      <div class="flex flex-col items-center  bg-white px-[120px] py-[80px] rounded-[24px]">
-      
-        <div>
-
-          <h2 class="text-center text-#1A1A2C inter text-[44px] font-bold "> Get in Touch </h2>
-  
-          <div>
-            <div class="flex justify-center pt-[4px] pb-[4px]">
-              <div>
-                <label class="inter text-[16px] leading-[24px]" for="name">Name</label><br>
-                <!-- border size จงใจทำเป็น 3px นะครับ 1 มันมองเเทบไม่เห็นเลยอ่ะ -->
-                <input
-                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px]"
-                  type="text" id="name" name="name" placeholder="  John    Doe"><br>
-              </div>
-            </div>
-  
-            <div class="flex justify-center pt-[4px] pb-[4px]">
-              <div>
-                <label class="inter text-[16px] leading-[24px]" for="email">Email</label><br>
-                <input
-                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px]"
-                  type="text" id="email" name="email" placeholder="  john@example.com"><br>
-              </div>
-            </div>
-  
-            <div class="flex justify-center pt-[4px] pb-[4px]">
-              <div>
-                <label class="inter text-[16px] leading-[24px]" for="message">Message</label><br>
-                <input
-                  class="inter text-[16px] leading-[24px] h-[102px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px]"
-                  type="text" id="message" name="message" placeholder="  Your message..."><br>
-              </div>
-            </div>
-            <div class="flex justify-center mt-4">
-              <button class=" inter bg-[#1A1A2C] text-white text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[16px]"
-                type="button">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <footer class=" w-full">
-        <div class="flex justify-between w-full px-[10] py-[120px]">
-  
-          <div>
-            <label class="inter text-[16px] leading-[24px] pl-[30px] h-[48px]">Acme productivity app ©2024</label>
-          </div>
-  
-          <div class="flex-row justify-between h-[12px] w-[313px] px-[10] py-[20px]">
-            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">FAQ</a>
-            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">Terms</a>
-            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">AI Policy</a>
-            <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">Pricing</a>
-          </div>
-  
-        </div>
-      </footer>
-  
 
   </body>
 </html>
