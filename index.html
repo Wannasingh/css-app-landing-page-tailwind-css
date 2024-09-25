@@ -145,10 +145,10 @@
       </content>
     </section>
     <!-- toei end here -->
-
-    <div class = "flex flex-col items-center pt[20px] pb-20">
+    <!-- Mocca from here to end -->
+    <div class = "flex w-full flex-col items-center pt[20px] pb-20">
       
-      <div class="flex flex-col items-center  bg-white px-[120px] py-[80px] rounded-[24px]">
+      <div class = "flex  flex-col items-center  bg-white px-[120px] py-[80px] rounded-[24px] max-sm:w-[375px] md:w-[834px] h-[530px] lg:w-[1200px] h-[666px]">
       
         <div>
 
@@ -160,7 +160,7 @@
                 <label class="inter text-[16px] leading-[24px]" for="name">Name</label><br>
                 <!-- border size จงใจทำเป็น 3px นะครับ 1 มันมองเเทบไม่เห็นเลยอ่ะ -->
                 <input
-                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px]"
+                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px] max-sm:w-[303px] md:w-[546px]"
                   type="text" id="name" name="name" placeholder="  John    Doe"><br>
               </div>
             </div>
@@ -169,35 +169,35 @@
               <div>
                 <label class="inter text-[16px] leading-[24px]" for="email">Email</label><br>
                 <input
-                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px]"
+                  class="inter text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px] max-sm:w-[303px] md:w-[546px] "
                   type="text" id="email" name="email" placeholder="  john@example.com"><br>
               </div>
             </div>
   
             <div class="flex justify-center pt-[4px] pb-[4px]">
-              <div>
+              <div>   
                 <label class="inter text-[16px] leading-[24px]" for="message">Message</label><br>
                 <input
-                  class="inter text-[16px] leading-[24px] h-[102px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px]"
+                  class="inter text-[16px] leading-[24px] h-[102px] w-[589px] rounded-[12px] border-solid border-[2px] border-grey-300 pl-[5px] max-sm:w-[303px] md:w-[546px]"
                   type="text" id="message" name="message" placeholder="  Your message..."><br>
               </div>
             </div>
             <div class="flex justify-center mt-4">
-              <button class=" inter bg-[#1A1A2C] text-white text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[16px]"
+              <button class=" inter bg-[#1A1A2C] text-white text-[16px] leading-[24px] h-[48px] w-[589px] rounded-[16px] max-sm:w-[303px] md:w-[546px]"
                 type="button">Submit</button>
             </div>
           </div>
         </div>
       </div>
 
-      <footer class=" w-full">
-        <div class="flex justify-between w-full px-[10] py-[120px]">
+      <footer class="w-full md:w-[834px] lg:w-[1200px]">
+        <div class="flex md:w-full px-[10] py-[120px] md:flex-row md:justify-between sm:px-[0] py-[40px] flex-col items-center lg:flex-row">
   
           <div>
-            <label class="inter text-[16px] leading-[24px] pl-[30px] h-[48px]">Acme productivity app ©2024</label>
+            <label class="inter text-[16px] leading-[24px]  h-[48px] flex sm:pl-[0px] md:pl-[30px] lg:pl-[30px]">Acme productivity app ©2024</label>
           </div>
   
-          <div class="flex-row justify-between h-[12px] w-[313px] px-[10] py-[20px]">
+          <div class="flex flex-row justify-between items-center h-[12px] w-[313px] px-[10] py-[20px]">
             <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">FAQ</a>
             <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">Terms</a>
             <a class="inter text-[#1A1A2C] font-bold text-[16px] leading-[24px] px-2 py-4">AI Policy</a>
@@ -206,7 +206,7 @@
   
         </div>
       </footer>
-  
+    </div>
 
   </body>
 </html>
